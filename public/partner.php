@@ -12,10 +12,8 @@ curl_setopt($ch, CURLOPT_URL,$url);
 $result=curl_exec($ch);
 // Closing
 curl_close($ch);
-
 // Will dump a beauty json :3
 $partner_details = json_decode($result, true); 
-
 ?>
 
 <div class="main-courses-section">
