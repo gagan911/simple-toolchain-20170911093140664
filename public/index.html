@@ -6,20 +6,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="stylesheets/style.css">
-    <script>
-                 $.ajax({
-                  url: "https://api.coursera.org/api/partners.v1?Gtv4Xb1-EeS-ViIACwYKVQ&fields=language,description,banner,courseIds,instructorIds,links,location",
-                  // Handle as Text
-                  dataType: "text",
-                  success: function(data) {
-                      // Parse JSON file
-                      var json = $.parseJSON(data);
-                      //Store data into a variable
-                      // Display Players
-                      $('#players').html('Currently there are: ' + json.now ' users');
-                  }
-      });
-    </script>
   </head>
 
   <body>
